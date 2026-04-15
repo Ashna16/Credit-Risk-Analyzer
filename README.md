@@ -1,6 +1,6 @@
 # Credit Risk Analyzer
 
-![Credit Risk Analyzer — financial document automation](assets/readme-hero.png)
+![Credit Risk Analyzer — architecture: Streamlit → FastAPI → pdfplumber / financial_parser → PostgreSQL](assets/architecture-diagram.png)
 
 Every month or quarter, after a bank lends money to a company, a team of analysts manually pulls their financial documents — 10-Ks, income statements, balance sheets, cash flow statements, covenant reports — opens each one, copies the numbers into Excel by hand, and calculates whether that borrower is still safe.
 
