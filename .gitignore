@@ -1,0 +1,106 @@
+# SECRETS — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.toml
+credentials.json
+*credentials*.json
+service-account*.json
+
+# USER UPLOADS — contain financial documents and PII
+uploads/
+*.pdf
+
+# DATA FILES — raw extracts, exports, caches, tabular & binary dumps (not app config JSON)
+*.csv
+*.tsv
+*.tab
+*.parquet
+*.feather
+*.arrow
+*.ipc
+*.h5
+*.hdf5
+*.xlsx
+*.xls
+*.xlsm
+*.ods
+*.jsonl
+*.ndjson
+*.pkl
+*.pickle
+*.joblib
+*.npy
+*.npz
+*.sav
+*.mat
+*.db-journal
+*.wal
+
+# Archives (often bulk data or PII); force-add with git add -f if you need an exception
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+
+# Local data trees and caches
+data/
+**/data/
+**/raw/
+**/datasets/
+**/sample_data/
+loan_doc_extractor_mvp/uploaded_docs/
+**/.extract_cache/
+Manual Testing/
+
+# Scrap / assets / generated (never ship in repo)
+.docx_check/
+.docx_check_2/
+extracted_pages/
+extracted_pages_rotated/
+pdf_pages/
+portfolio_assets/
+rbc_hackathon_text_extract/
+frontend/
+backend/uploads/
+loan_doc_extractor_mvp/.run/
+*.bak
+
+# PYTHON
+__pycache__/
+*.py[cod]
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+dist/
+build/
+
+# DATABASE
+*.sqlite
+*.sqlite3
+*.db
+
+# ALEMBIC
+backend/alembic.ini
+backend/alembic/*
+!backend/alembic/versions/
+!backend/alembic/versions/*.py
+
+# DOCKER overrides
+docker-compose.override.yml
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+Thumbs.db
